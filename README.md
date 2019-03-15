@@ -21,3 +21,6 @@ compile and run app for async server
 	$ ./async_server                                                                                
 	$ ./client
 
+
+If error is returned when server starts "bind: Address already in use", kill any
+process which uses port 1234 "lsof -ti:1234 | xargs kill -9".
